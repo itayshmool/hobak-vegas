@@ -98,6 +98,31 @@ h2 {
     color: #eee;
 }
 
+#gallery {
+    padding: 3rem 1.5rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-w: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #ffff00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff00ff;
+}
+
 #menu {
     max-width: 800px;
     margin: 0 auto;
