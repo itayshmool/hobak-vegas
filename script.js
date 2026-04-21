@@ -1,11 +1,11 @@
 const menuItems = [
-    { name: "Pork Belly", price: "$28" },
-    { name: "Marinated Short Rib", price: "$42" },
-    { name: "Thin-sliced Brisket", price: "$28" },
-    { name: "Ribeye", price: "$48" },
-    { name: "Shrimp", price: "$28" },
-    { name: "Kimchi Stew", price: "$15" },
-    { name: "Soju", price: "$12" }
+    { name: "Pork Belly", price: "$28", image: "https://source.unsplash.com/random/150x150/?pork-belly" },
+    { name: "Marinated Short Rib", price: "$42", image: "https://source.unsplash.com/random/150x150/?galbi" },
+    { name: "Thin-sliced Brisket", price: "$28", image: "https://source.unsplash.com/random/150x150/?brisket" },
+    { name: "Ribeye", price: "$48", image: "https://source.unsplash.com/random/150x150/?ribeye-steak" },
+    { name: "Shrimp", price: "$28", image: "https://source.unsplash.com/random/150x150/?grilled-shrimp" },
+    { name: "Kimchi Stew", price: "$15", image: "https://source.unsplash.com/random/150x150/?kimchi-stew" },
+    { name: "Soju", price: "$12", image: "https://source.unsplash.com/random/150x150/?soju" }
 ];
 
 const menuSection = document.getElementById('menu');
@@ -17,9 +17,12 @@ function displayMenu() {
         menuItem.style.animationDelay = `${index * 0.2}s`;
         
         menuItem.innerHTML = `
-            <span class="item-name">${item.name}</span>
-            <span class="item-dots"></span>
-            <span class="item-price">${item.price}</span>
+            <img src="${item.image}" alt="${item.name}" class="item-image">
+            <div class="item-details">
+                <span class="item-name">${item.name}</span>
+                <span class="item-dots"></span>
+                <span class="item-price">${item.price}</span>
+            </div>
         `;
         
         menuSection.appendChild(menuItem);

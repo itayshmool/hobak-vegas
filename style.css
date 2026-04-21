@@ -80,10 +80,24 @@ h2 {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 1rem 0;
+    align-items: center;
+    margin: 1.5rem 0;
     font-size: 1.2rem;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.item-details {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
 }
 
 .item-name {
