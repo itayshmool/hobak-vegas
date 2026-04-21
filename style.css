@@ -123,6 +123,42 @@ h2 {
     box-shadow: 0 0 15px #ff00ff;
 }
 
+#testimonials {
+    background-color: #1a1a1a;
+    padding: 3rem 1.5rem;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-w: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #333;
+    border: 3px solid #00ffff;
+    padding: 1.5rem;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #fff;
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ffff00;
+    text-align: right;
+}
+
 #menu {
     max-width: 800px;
     margin: 0 auto;
