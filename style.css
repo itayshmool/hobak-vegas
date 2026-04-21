@@ -159,6 +159,41 @@ h2 {
     text-align: right;
 }
 
+#reservations {
+    background-color: #ff00ff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+#reservations h2 {
+    color: #ffff00;
+}
+
+#reservations p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.reserve-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    background-color: #ffff00;
+    text-decoration: none;
+    border: 3px solid #1a1a1a;
+    box-shadow: 5px 5px 0px #00ffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.reserve-button:hover {
+    background-color: #00ffff;
+    box-shadow: 5px 5px 0px #ffff00;
+    transform: translateY(-3px);
+}
+
 #menu {
     max-width: 800px;
     margin: 0 auto;
