@@ -70,6 +70,34 @@ h2 {
     color: #ffff00;
 }
 
+#about {
+    background-color: #222;
+    padding: 3rem 1.5rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-w: 900px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #ff00ff;
+}
+
+.about-text {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #eee;
+}
+
 #menu {
     max-width: 800px;
     margin: 0 auto;
@@ -150,5 +178,11 @@ footer {
 @media (max-width: 600px) {
     h1 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
     }
 }
